@@ -498,7 +498,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 20
   xRange: 15
-  yRange: 15
+  yRange: 10
+  positionPitchFactor: 1
+  controlPitchFactor: -30
+  positionYawFactor: 2
+  controlRollFactor: -50
 --- !u!1 &1353911398
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,12 +744,12 @@ PrefabInstance:
     - target: {fileID: 8783796887361113362, guid: 62066012bc987e64ebcd84496112b0f1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -3.69
       objectReference: {fileID: 0}
     - target: {fileID: 8783796887361113362, guid: 62066012bc987e64ebcd84496112b0f1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.48
+      value: 19.79
       objectReference: {fileID: 0}
     - target: {fileID: 8783796887361113362, guid: 62066012bc987e64ebcd84496112b0f1,
         type: 3}
