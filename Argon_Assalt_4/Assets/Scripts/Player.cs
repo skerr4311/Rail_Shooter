@@ -6,32 +6,34 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour
 {
+    [Header("General")]
     [Tooltip("In ms^-1")][SerializeField] float Speed = 40f;
     [Tooltip("In m")] [SerializeField] float xRange = 15f;
     [Tooltip("In m")] [SerializeField] float yRange = 10f;
 
+    [Header("Screen-Position-Based")]
     [SerializeField] float positionPitchFactor = -2f;
-    [SerializeField] float controlPitchFactor = -30f;
     [SerializeField] float positionYawFactor = 2f;
+
+    [Header("Screen-Throw-Based")]
+    [SerializeField] float controlPitchFactor = -30f;
     [SerializeField] float controlRollFactor = -50f;
 
     float xThrow, yThrow;
+    bool isControlEnabled = true;
 
+    void OnPlayerDeath() //called by string referance
+    {
+        isControlEnabled = false;
+    }
     // Update is called once per frame
     void Update()
     {
-        ProcessTranslation();
-        ProcessRotation();
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        print("Player collided with something");
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        print("Player triggered something");
+        if (isControlEnabled)
+        {
+            ProcessTranslation();
+            ProcessRotation();
+        }
     }
 
     private void ProcessRotation()
