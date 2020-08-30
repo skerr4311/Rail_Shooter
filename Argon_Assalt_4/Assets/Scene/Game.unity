@@ -781,12 +781,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circuit: {fileID: 254497413}
-  lookAheadForTargetOffset: 1
-  lookAheadForTargetFactor: 0.1
-  lookAheadForSpeedOffset: 10
-  lookAheadForSpeedFactor: 0.2
+  lookAheadForTargetOffset: 0.4
+  lookAheadForTargetFactor: 0.05
+  lookAheadForSpeedOffset: 0.4
+  lookAheadForSpeedFactor: 0.4
   progressStyle: 0
-  pointToPointThreshold: 4
+  pointToPointThreshold: 1
   target: {fileID: 963194228}
 --- !u!4 &1011723002 stripped
 Transform:
@@ -1534,6 +1534,10 @@ PrefabInstance:
       propertyPath: DeathFX
       value: 
       objectReference: {fileID: 3847299967296447696}
+    - target: {fileID: 1011723003, guid: 62066012bc987e64ebcd84496112b0f1, type: 3}
+      propertyPath: Speed
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 8432473337377472137, guid: 62066012bc987e64ebcd84496112b0f1,
         type: 3}
       propertyPath: playOnAwake
