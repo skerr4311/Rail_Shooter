@@ -1090,6 +1090,12 @@ MonoBehaviour:
   deathFX: {fileID: 4639397272383744998, guid: 6f634092d94d0e94085abbf85716871c, type: 3}
   parent: {fileID: 625699332}
   scorePerHit: 100
+--- !u!1 &837906413 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6881992756776485964, guid: 62066012bc987e64ebcd84496112b0f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 3847299967296447695}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &846078155 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 235044183976193143, guid: 156703f9a011615469e5f9178e324db4,
@@ -2419,6 +2425,12 @@ Transform:
   m_Father: {fileID: 254497412}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1995106317 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3847299967496462340, guid: 62066012bc987e64ebcd84496112b0f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 3847299967296447695}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1996357328
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2649,9 +2661,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3847299967296447696}
     - target: {fileID: 1011723003, guid: 62066012bc987e64ebcd84496112b0f1, type: 3}
+      propertyPath: guns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011723003, guid: 62066012bc987e64ebcd84496112b0f1, type: 3}
       propertyPath: Speed
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 1011723003, guid: 62066012bc987e64ebcd84496112b0f1, type: 3}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 1995106317}
+    - target: {fileID: 1011723003, guid: 62066012bc987e64ebcd84496112b0f1, type: 3}
+      propertyPath: guns.Array.data[1]
+      value: 
+      objectReference: {fileID: 837906413}
     - target: {fileID: 3847299967496462337, guid: 62066012bc987e64ebcd84496112b0f1,
         type: 3}
       propertyPath: CollisionModule.enabled
@@ -2667,6 +2691,11 @@ PrefabInstance:
       propertyPath: CollisionModule.collisionMessages
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3847299967496462340, guid: 62066012bc987e64ebcd84496112b0f1,
+        type: 3}
+      propertyPath: m_Name
+      value: Gun Left
+      objectReference: {fileID: 0}
     - target: {fileID: 6881992756776485961, guid: 62066012bc987e64ebcd84496112b0f1,
         type: 3}
       propertyPath: CollisionModule.enabled
@@ -2681,6 +2710,11 @@ PrefabInstance:
         type: 3}
       propertyPath: CollisionModule.collisionMessages
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6881992756776485964, guid: 62066012bc987e64ebcd84496112b0f1,
+        type: 3}
+      propertyPath: m_Name
+      value: GunRight
       objectReference: {fileID: 0}
     - target: {fileID: 8432473337377472137, guid: 62066012bc987e64ebcd84496112b0f1,
         type: 3}
