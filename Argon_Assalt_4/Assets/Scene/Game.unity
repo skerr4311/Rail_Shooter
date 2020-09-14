@@ -3821,6 +3821,11 @@ PrefabInstance:
       propertyPath: NoiseModule.enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3847299967496462337, guid: 62066012bc987e64ebcd84496112b0f1,
+        type: 3}
+      propertyPath: simulationSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3847299967496462340, guid: 62066012bc987e64ebcd84496112b0f1,
         type: 3}
       propertyPath: m_Name
@@ -3840,6 +3845,11 @@ PrefabInstance:
         type: 3}
       propertyPath: CollisionModule.collisionMessages
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6881992756776485961, guid: 62066012bc987e64ebcd84496112b0f1,
+        type: 3}
+      propertyPath: simulationSpeed
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6881992756776485964, guid: 62066012bc987e64ebcd84496112b0f1,
         type: 3}
